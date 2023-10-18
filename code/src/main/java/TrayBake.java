@@ -1,10 +1,12 @@
-public class TrayBake extends Cake{
+public class TrayBake extends Cake implements IWeight{
 
     private boolean hasSprinkles;
+    private int weight;
 
     public TrayBake(String name, String baseFlavour, int cost){
         super(name, baseFlavour, cost);
-        hasSprinkles = false;
+        this.hasSprinkles = false;
+        this.weight = 500;
     }
 
     public boolean hasSprinkles() {
@@ -17,5 +19,9 @@ public class TrayBake extends Cake{
 
     public int servings(){
         return 6;
+    }
+
+    public int getWeight(){
+        return weight;
     }
 }

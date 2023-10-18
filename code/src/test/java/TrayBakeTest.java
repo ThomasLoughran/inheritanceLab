@@ -28,4 +28,8 @@ public class TrayBakeTest {
         assertThat(trayBake.getCost()).isEqualTo(5);
     }
 
+    @Test
+    void canGetWeight(){
+        assertThat(trayBake.getWeight()).isEqualTo(500);
+    }
 }

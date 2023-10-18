@@ -1,14 +1,16 @@
 import java.util.ArrayList;
 
-public class SpongeCake extends Cake{
+public class SpongeCake extends Cake implements IWeight{
 
     private boolean isVegan;
     private ArrayList<String> toppings;
+    private int weight;
 
     public SpongeCake(String name, String baseFlavour, int price){
         super(name, baseFlavour, price);
-        isVegan = false;
-        toppings = new ArrayList<>();
+        this.isVegan = false;
+        this.toppings = new ArrayList<>();
+        this.weight = 450;
     }
 
     public boolean isVegan() {
@@ -31,5 +33,8 @@ public class SpongeCake extends Cake{
         return 5;
     }
 
+    public int getWeight(){
+        return weight;
+    }
 
 }

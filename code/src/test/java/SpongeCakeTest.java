@@ -18,4 +18,9 @@ public class SpongeCakeTest {
         assertThat(spongeCake.getToppingsSize()).isEqualTo(1);
     }
 
+    @Test
+    void canGetWeight(){
+        assertThat(spongeCake.getWeight()).isEqualTo(450);
+    }
+
 }
